@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <title>Encriptador</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
+        <script src="https://kit.fontawesome.com/56435b6968.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <a href="index.html"><img src="imagenes/logo.png" alt="Logo de alura"></a>
+        </header>
+        <main>
+            <section class="textArea1">
+                <textarea class="text_encriptar" name="text_encriptar" id="text_encriptar" autocomplete="off" placeholder="Ingrese el texto aqui"></textarea>
+                <div>
+                    <p>Solo letras minúsculas y sin acentos</p>
+                    <div class="input__buttons">
+                        <button class="input__buttons__button" onclick="encriptar()">Encriptar</button>
+                        <button class="input__buttons__button button--main" onclick="desencriptar()">Desencriptar</button>
+                    </div>
+                </div>
+            </section>
+            <section class="mensaje">
+                <div class="output__not-found" id="not-found">
+                    <img class="ouput__not-found__doll" src="imagenes/Muñeco.png" alt="Muñeco con Lupa">
+                    <div class="output__not-found__text-box">
+                        <p>Ningún mensaje fue encontrado</p>
+                        <p>Ingresa o pega el texto que desea encriptar o desencripta.</p>
+                    </div>
+                </div>
+                <div class="output__result" id="result">
+                            <p class="output__result__text" id="text_encriptado"></p>
+                            <div class="output_result__buttons">
+                                <button class="output__result__buttons__button" onclick="copy()">Copiar</button>
+                            </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>
+                Elaborado por José Nelson Carrillo
+            </p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
